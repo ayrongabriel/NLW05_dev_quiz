@@ -10,7 +10,7 @@ Results from day 1 and 2 .
 
 [![Quiz](https://estudos.airongabriel.com.br/NLW05-FLUTTER/assets/Screenshot_1618969900.png "Quiz")](http://https://estudos.airongabriel.com.br/NLW05-FLUTTER/assets/Screenshot_1618969900.png "Quiz")
 <hr>
-[![Quiz](https://estudos.airongabriel.com.br/NLW05-FLUTTER/assets/Captura%20de%20tela%20de%202021-04-20%2023-22-33.png "Quiz")](https://estudos.airongabriel.com.br/NLW05-FLUTTER/assets/Captura%20de%20tela%20de%202021-04-20%2023-22-33.png "Quiz")
+[![Screenshot](https://estudos.airongabriel.com.br/NLW05-FLUTTER/assets/Captura-de-tela-de-2021-04-2023-22-33.png "Screenshot")](https://estudos.airongabriel.com.br/NLW05-FLUTTER/assets/Captura-de-tela-de-2021-04-2023-22-33.png "Screenshot")
 <hr>
 This project is a starting point for a Flutter application.
 
