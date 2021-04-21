@@ -1,16 +1,19 @@
-<h1>Dev Quiz</h1>
+# Dev Quiz
 Dev quiz done in <a href="https://nextlevelweek.com/">Nlw5 Rocketseat</a>
 
 Results from day 1 and 2 .
 <hr>
 <h1>Screenshot</h1>
-[![Splash](https://estudos.airongabriel.com.br/NLW05-FLUTTER/assets/Screenshot_1618970458.png "Splash")](https://estudos.airongabriel.com.br/NLW05-FLUTTER/assets/Screenshot_1618970458.png "Splash")
 
-[![HomePage](https://estudos.airongabriel.com.br/NLW05-FLUTTER/assets/Screenshot_1618970409.png "HomePage")](https://estudos.airongabriel.com.br/NLW05-FLUTTER/assets/Screenshot_1618970409.png "HomePage")
+![enter image description here](https://estudos.airongabriel.com.br/NLW05-FLUTTER/assets/Screenshot_1618970458.png)
 
-[![Quiz](https://estudos.airongabriel.com.br/NLW05-FLUTTER/assets/Screenshot_1618969900.png "Quiz")](http://https://estudos.airongabriel.com.br/NLW05-FLUTTER/assets/Screenshot_1618969900.png "Quiz")
+![](https://estudos.airongabriel.com.br/NLW05-FLUTTER/assets/Screenshot_1618970409.png)
+
+![enter image description here](https://estudos.airongabriel.com.br/NLW05-FLUTTER/assets/Screenshot_1618969900.png)
 <hr>
-[![Screenshot](https://estudos.airongabriel.com.br/NLW05-FLUTTER/assets/Captura-de-tela-de-2021-04-2023-22-33.png "Screenshot")](https://estudos.airongabriel.com.br/NLW05-FLUTTER/assets/Captura-de-tela-de-2021-04-2023-22-33.png "Screenshot")
+
+![enter image description here](https://estudos.airongabriel.com.br/NLW05-FLUTTER/assets/Captura-de-tela-de-2021-04-2023-22-33.png)
+
 <hr>
 This project is a starting point for a Flutter application.
 
@@ -22,5 +25,3 @@ A few resources to get you started if this is your first Flutter project:
 For help getting started with Flutter, view our
 [online documentation](https://flutter.dev/docs), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
-
-
