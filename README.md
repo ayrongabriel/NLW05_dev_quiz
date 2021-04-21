@@ -1,9 +1,17 @@
-# dev_quiz
+<h1>Dev Quiz</h1>
+Dev quiz done in <a href="https://nextlevelweek.com/">Nlw5 Rocketseat</a>
 
-A new Flutter project.
+Results from day 1 and 2 .
+<hr>
+<h1>Screenshot</h1>
+[![Splash](https://estudos.airongabriel.com.br/NLW05-FLUTTER/assets/Screenshot_1618970458.png "Splash")](https://estudos.airongabriel.com.br/NLW05-FLUTTER/assets/Screenshot_1618970458.png "Splash")
 
-## Getting Started
+[![HomePage](https://estudos.airongabriel.com.br/NLW05-FLUTTER/assets/Screenshot_1618970409.png "HomePage")](https://estudos.airongabriel.com.br/NLW05-FLUTTER/assets/Screenshot_1618970409.png "HomePage")
 
+[![Quiz](https://estudos.airongabriel.com.br/NLW05-FLUTTER/assets/Screenshot_1618969900.png "Quiz")](http://https://estudos.airongabriel.com.br/NLW05-FLUTTER/assets/Screenshot_1618969900.png "Quiz")
+<hr>
+[![Quiz](https://estudos.airongabriel.com.br/NLW05-FLUTTER/assets/Captura%20de%20tela%20de%202021-04-20%2023-22-33.png "Quiz")](https://estudos.airongabriel.com.br/NLW05-FLUTTER/assets/Captura%20de%20tela%20de%202021-04-20%2023-22-33.png "Quiz")
+<hr>
 This project is a starting point for a Flutter application.
 
 A few resources to get you started if this is your first Flutter project:
@@ -14,3 +22,5 @@ A few resources to get you started if this is your first Flutter project:
 For help getting started with Flutter, view our
 [online documentation](https://flutter.dev/docs), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
+
+
