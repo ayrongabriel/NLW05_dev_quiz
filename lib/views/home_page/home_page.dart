@@ -1,5 +1,7 @@
+import 'package:flutter/foundation.dart' show kIsWeb;
+
 import 'package:dev_quiz/core/app_colors.dart';
-import 'package:dev_quiz/views/home_page/home_controller.dart';
+import 'package:dev_quiz/controllers/home_controller.dart';
 import 'package:dev_quiz/views/home_page/home_state.dart';
 import 'package:dev_quiz/views/home_page/quiz_card/quiz_card_widget.dart';
 import 'package:dev_quiz/views/home_page/widgets/appbar/app_bar_widget.dart';
@@ -17,8 +19,7 @@ class _HomePageState extends State<HomePage> {
   @override
   void initState() {
     super.initState();
-    controller.getUser();
-    controller.getQuizzes();
+    controller.fetchData();
     controller.stateNotifier.addListener(() {
       setState(() {});
     });
@@ -58,7 +59,7 @@ class _HomePageState extends State<HomePage> {
                 child: GridView.count(
                   crossAxisSpacing: 15,
                   mainAxisSpacing: 15,
-                  crossAxisCount: 2,
+                  crossAxisCount: kIsWeb ? 4 : 2,
                   children: controller.quizzes!
                       .map((e) => QuizCardWidget(
                             title: e.title,

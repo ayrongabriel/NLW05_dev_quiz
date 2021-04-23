@@ -1,8 +1,7 @@
-import 'package:dev_quiz/core/core.dart';
-import 'package:dev_quiz/views/home_page/home_repository.dart';
+import 'package:dev_quiz/repositories/home_repository.dart';
 import 'package:dev_quiz/views/home_page/home_state.dart';
-import 'package:dev_quiz/views/shared/models/quiz_model.dart';
-import 'package:dev_quiz/views/shared/models/user_model.dart';
+import 'package:dev_quiz/models/quiz_model.dart';
+import 'package:dev_quiz/models/user_model.dart';
 import 'package:flutter/foundation.dart';
 
 class HomeController {

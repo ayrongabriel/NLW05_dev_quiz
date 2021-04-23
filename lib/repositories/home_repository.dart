@@ -1,7 +1,7 @@
 import 'dart:convert';
 
-import 'package:dev_quiz/views/shared/models/quiz_model.dart';
-import 'package:dev_quiz/views/shared/models/user_model.dart';
+import 'package:dev_quiz/models/quiz_model.dart';
+import 'package:dev_quiz/models/user_model.dart';
 import 'package:flutter/services.dart';
 
 class HomeRepository {

@@ -1,4 +1,3 @@
-import 'package:dev_quiz/views/shared/models/quiz_model.dart';
 import 'package:flutter/material.dart';
 
 import 'package:dev_quiz/core/app_colors.dart';
