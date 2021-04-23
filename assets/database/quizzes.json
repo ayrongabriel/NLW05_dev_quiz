@@ -15,7 +15,7 @@
                 ]
             },
             {
-            "title": "Está curtindo o Flutter?",
+            "title": "Qual o melhor gerenciador de estado?",
                 "awnsers": [
                     {"title": "Estou curtindo"},
                     {"title": "Amando Flutter"},
@@ -53,31 +53,22 @@
         ]
     },
     {
-    "title": "NLW 5 Flutter",
+    "title": "Gerenciamento de estado",
         "questionAnswered": 1,
         "image": "blocks",
         "level": "facil",
         "questions": [
             {
-            "title": "Está curtindo o Flutter?",
+            "title": "Qual o melhor gerenciador de estado?",
                 "awnsers": [
-                    {"title": "Estou curtindo"},
-                    {"title": "Amando Flutter"},
-                    {"title": "Muito top"},
-                    {"title": "Show de bola", "isRight": true}
+                    {"title": "Provider"},
+                    {"title": "BloC"},
+                    {"title": "State management"},
+                    {"title": "MobX", "isRight": true}
                 ]
             },
             {
-            "title": "Está curtindo o Flutter?",
-                "awnsers": [
-                    {"title": "Estou curtindo"},
-                    {"title": "Amando Flutter"},
-                    {"title": "Muito top"},
-                    {"title": "Show de bola", "isRight": true}
-                ]
-            },
-            {
-            "title": "Está curtindo o Flutter?",
+            "title": "Pergunta 2?",
                 "awnsers": [
                     {"title": "Estou curtindo"},
                     {"title": "Amando Flutter"},

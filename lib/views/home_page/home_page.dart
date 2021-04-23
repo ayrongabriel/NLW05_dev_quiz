@@ -1,3 +1,4 @@
+import 'package:dev_quiz/views/challenge/challenge_page.dart';
 import 'package:flutter/foundation.dart' show kIsWeb;
 
 import 'package:dev_quiz/core/app_colors.dart';
@@ -18,11 +19,11 @@ class _HomePageState extends State<HomePage> {
 
   @override
   void initState() {
-    super.initState();
     controller.fetchData();
     controller.stateNotifier.addListener(() {
       setState(() {});
     });
+    super.initState();
   }
 
   @override
@@ -66,6 +67,14 @@ class _HomePageState extends State<HomePage> {
                             percent: e.questionAnswered / e.questions.length,
                             completed:
                                 "${e.questionAnswered} de ${e.questions.length}",
+                            onTap: () {
+                              Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (contex) => ChallengePage(
+                                            questions: e.questions,
+                                          )));
+                            },
                           ))
                       .toList(),
                 ),

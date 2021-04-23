@@ -1,11 +1,29 @@
 import 'package:dev_quiz/core/app_text_styles.dart';
+import 'package:dev_quiz/models/awnser_model.dart';
+import 'package:dev_quiz/models/question_model.dart';
 import 'package:dev_quiz/views/challenge/awnser/awnser_widgwt.dart';
 import 'package:flutter/material.dart';
 
-class QuizWidget extends StatelessWidget {
+class QuizWidget extends StatefulWidget {
   final String title;
+  final QuestionModel questions;
+  final VoidCallback onChange;
 
-  const QuizWidget({Key? key, required this.title}) : super(key: key);
+  const QuizWidget(
+      {Key? key,
+      required this.title,
+      required this.questions,
+      required this.onChange})
+      : super(key: key);
+
+  @override
+  _QuizWidgetState createState() => _QuizWidgetState();
+}
+
+class _QuizWidgetState extends State<QuizWidget> {
+  int indexSeleted = -1;
+
+  AwnserModel awnser(int index) => widget.questions.awnsers[index];
 
   @override
   Widget build(BuildContext context) {
@@ -15,35 +33,28 @@ class QuizWidget extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.start,
         children: [
           Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 20),
+            padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
             child: Text(
-              title,
+              widget.questions.title,
               style: AppTextStyles.heading,
             ),
           ),
           SizedBox(
             height: 24,
           ),
-          AwnserWidget(
-            title: "Kit de desenvolvimento de  intefarce de usuários",
-            isRight: false,
-            isSelected: false,
-          ),
-          AwnserWidget(
-            title: "Possibilita a criação de aplicativos copilados",
-            isSelected: true,
-            isRight: true,
-          ),
-          AwnserWidget(
-            title: "Acho que é uma marca de café do Himalaia",
-            isSelected: true,
-            isRight: false,
-          ),
-          AwnserWidget(
-            title: "Possibilita a criação desktops que são muito incríveis",
-            isSelected: false,
-            isRight: false,
-          ),
+          for (var i = 0; i < widget.questions.awnsers.length; i++)
+            AwnserWidget(
+              awnser: awnser(i),
+              isSelected: indexSeleted == i,
+              disabled: indexSeleted != -1,
+              onTap: () {
+                setState(() {
+                  indexSeleted = i;
+                  Future.delayed(Duration(seconds: 1))
+                      .then((value) => widget.onChange());
+                });
+              },
+            ),
         ],
       ),
     );
