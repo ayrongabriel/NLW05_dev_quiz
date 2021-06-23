@@ -3,12 +3,15 @@ import 'package:dev_quiz/models/question_model.dart';
 import 'package:dev_quiz/views/challenge/next_button/next_button.dart';
 import 'package:dev_quiz/views/challenge/widgets/question_indication/question_indicator.dart';
 import 'package:dev_quiz/views/challenge/widgets/quiz/quiz_widget.dart';
+import 'package:dev_quiz/views/result/result_page.dart';
 import 'package:flutter/material.dart';
 
 class ChallengePage extends StatefulWidget {
   final List<QuestionModel> questions;
+  final String title;
 
-  const ChallengePage({Key? key, required this.questions}) : super(key: key);
+  const ChallengePage({Key? key, required this.questions, required this.title})
+      : super(key: key);
   @override
   _ChallengePageState createState() => _ChallengePageState();
 }
@@ -31,6 +34,11 @@ class _ChallengePageState extends State<ChallengePage> {
     if (controller.currentPage < widget.questions.length)
       pageController.nextPage(
           duration: Duration(milliseconds: 100), curve: Curves.linear);
+  }
+
+  void onSelected(bool value) {
+    if (value) controller.qtdAwnserRight++;
+    _nextPage();
   }
 
   @override
@@ -67,7 +75,7 @@ class _ChallengePageState extends State<ChallengePage> {
               .map((e) => QuizWidget(
                     title: e.title,
                     questions: e,
-                    onChange: _nextPage,
+                    onSelected: onSelected,
                   ))
               .toList(),
         ),
@@ -94,7 +102,14 @@ class _ChallengePageState extends State<ChallengePage> {
                         child: NextButtonWidget.gree(
                       label: "Confirmar",
                       onTap: () {
-                        Navigator.pop(context);
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (contex) => ResultPage(
+                                      title: widget.title,
+                                      lenght: widget.questions.length,
+                                      result: controller.qtdAwnserRight,
+                                    )));
                       },
                     ))
                 ],

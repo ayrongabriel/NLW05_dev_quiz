@@ -34,32 +34,37 @@ class _HomePageState extends State<HomePage> {
           user: controller.user!,
         ),
         body: Padding(
-          padding:
-              const EdgeInsets.only(top: 40, right: 20, bottom: 0, left: 20),
+          padding: const EdgeInsets.only(top: 40, right: 0, bottom: 0, left: 0),
           child: Column(
             // mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Row(mainAxisAlignment: MainAxisAlignment.spaceAround, children: [
-                LevelButtonWidget(
-                  label: "Fácil",
-                ),
-                LevelButtonWidget(
-                  label: "Médio",
-                ),
-                LevelButtonWidget(
-                  label: "Difícil",
-                ),
-                LevelButtonWidget(
-                  label: "Perito",
-                ),
-              ]),
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 20),
+                child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceAround,
+                    children: [
+                      LevelButtonWidget(
+                        label: "Fácil",
+                      ),
+                      LevelButtonWidget(
+                        label: "Médio",
+                      ),
+                      LevelButtonWidget(
+                        label: "Difícil",
+                      ),
+                      LevelButtonWidget(
+                        label: "Perito",
+                      ),
+                    ]),
+              ),
               SizedBox(
                 height: 16,
               ),
               Expanded(
                 child: GridView.count(
-                  crossAxisSpacing: 15,
-                  mainAxisSpacing: 15,
+                  padding: EdgeInsets.symmetric(horizontal: 20),
+                  crossAxisSpacing: 16,
+                  mainAxisSpacing: 16,
                   crossAxisCount: kIsWeb ? 4 : 2,
                   children: controller.quizzes!
                       .map((e) => QuizCardWidget(
@@ -72,6 +77,7 @@ class _HomePageState extends State<HomePage> {
                                   context,
                                   MaterialPageRoute(
                                       builder: (contex) => ChallengePage(
+                                            title: e.title,
                                             questions: e.questions,
                                           )));
                             },

@@ -29,25 +29,21 @@ class QuizCardWidget extends StatelessWidget {
         decoration: BoxDecoration(
           border: Border.fromBorderSide(BorderSide(color: AppColors.border)),
           color: AppColors.white,
-          borderRadius: BorderRadius.circular(20),
+          borderRadius: BorderRadius.circular(10),
         ),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             Container(
               height: 40,
               width: 40,
               child: Image.asset(AppImages.blocks),
             ),
-            SizedBox(
-              height: 24,
-            ),
             Text(
               title,
               style: AppTextStyles.heading15,
-            ),
-            SizedBox(
-              height: 24,
+              // overflow: TextOverflow.ellipsis,
             ),
             Row(
               children: [
